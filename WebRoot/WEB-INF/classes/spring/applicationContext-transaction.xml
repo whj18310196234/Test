@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-4.2.xsd 
+		http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.2.xsd 
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-4.2.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-4.2.xsd "
+		default-lazy-init="true">
+		<!-- spring初始化事务的配置文件 -->
+		
+		<!-- 配置事务管理器 -->
+		<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+			<!-- 数据源 -->
+			<property name="dataSource" ref="dataSource"/>			
+		</bean>
+		<!-- 注解式事务配置-->  
+    	<!--<tx:annotation-driven transaction-manager="transactionManager"/>--> 
+		<!-- 申明式事务配置 -->
+		<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		  <tx:attributes>
+		     <!-- 传播行为 -->
+		    <tx:method name="save*" propagation="REQUIRED"/>
+		    <tx:method name="insert*" propagation="REQUIRED"/>
+		    <tx:method name="delete*" propagation="REQUIRED"/>
+		    <tx:method name="update*" propagation="REQUIRED"/>
+		    <!-- PROPAGATION_REQUIRED 当前如果有事务，Spring就会使用该事务；否则会开始一个新事务。  -->
+		    <!-- PROPAGATION_SUPPORTS 当前如果有事务，Spring就会使用该事务；否则不会开启一个新事务。  -->
+		    <tx:method name="find*" propagation="SUPPORTS" read-only="true"/>
+		    <tx:method name="get*" propagation="SUPPORTS" read-only="true"/>
+		    <tx:method name="select*" propagation="SUPPORTS" read-only="true"/>
+		    <tx:method name="count*" propagation="SUPPORTS" read-only="true"/>
+		  </tx:attributes>
+		</tx:advice>
+		
+		<!-- 配置AOP切面  -->		
+		<aop:config proxy-target-class="true">
+    		<aop:pointcut expression="execution(* com.sinosoft.accidentshare.service..*.*(..))" id="transactionAopConfig"/>
+    		<aop:advisor advice-ref="txAdvice" pointcut-ref="transactionAopConfig" />
+    	</aop:config>
+		
+</beans>

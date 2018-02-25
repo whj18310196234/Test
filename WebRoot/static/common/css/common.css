@@ -1,0 +1,322 @@
+/**************
+ * create by qianghuang
+ * 2016.12.17
+ * reset浣跨敤bootstrap
+ * sino-浠ｈ〃鍏ㄥ眬
+ * page-浠ｈ〃鍗曢〉闈� * TODO: 鍏ㄥ眬鏍峰紡
+ *************/
+/*reset*/
+html,body {
+    background: #f7f7f7;
+}
+ul,li,ol {
+    list-style: none;
+}
+.sino-mod-shadow {
+    box-shadow:2px 2px 2px rgba(0,0,0,0.05);
+}
+/**layout**/
+.sino-layout-wrapper {
+    min-width: 1200px;
+    position: relative;
+    /*padding: 0 10px 0 230px;*/
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.sino-layout-wrapper .asidecol {
+    /*position: absolute;left:10px; top:0;*/
+    float:left;
+    width: 200px;
+    position:relative;z-index:3;
+}
+.sino-layout-wrapper .maincol {
+    padding: 0 16px 20px;
+    margin-left: 220px;
+    background: #fff;
+}
+/**header**/
+.sino-header {
+	position:relative;z-index:3;
+    min-width: 1200px;
+    background: #028ad7;
+}
+.sino-header .logo-wrap {
+    padding: 10px 0;
+}
+.sino-header .logo {
+    float: left;
+}
+.sino-header .asidecol {
+    float: right;
+}
+.sino-header .top-menu li {
+    float: left;
+    margin: 20px 20px 0 0;
+    color:#fff;
+}
+.sino-header .top-menu a {
+	color: #fff;
+}
+.sino-header .top-menu a:hover {
+	opacity: 0.8;
+	text-decoration:none;
+}
+.sino-header .search-ico{
+    background: url(../images/suous.png) no-repeat;
+}
+.sino-header .mail-ico{
+    background: url(../images/yy.png) no-repeat;
+}
+.sino-header .tag-ico{
+    background: url(../images/xiaox.png) no-repeat;
+}
+.sino-header .set-ico{
+    background: url(../images/shezhi.png) no-repeat;
+}
+.sino-header .top-menu li.user-info {
+    height:20px;
+}
+.sino-header .user-info p{
+    font-size:14px;
+    margin-top: -30px;
+    margin-left: 45px;
+    color: white;
+}
+.sino-header .navigator {
+    height: 50px;
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 1px solid #E4EEF4;
+}
+.sino-header .navigator .nav-list {
+    margin: 0;
+    padding: 0;
+    background:#F2F9FF;
+}
+.sino-header .navigator li {
+    float:left;
+}
+.sino-header .navigator .nav {
+    display: block;
+    height: 50px;
+    width:128px;
+    text-align: center;
+    line-height: 50px;
+    padding: 0 10px;
+    color: #333;
+}
+.sino-header .navigator .nav:hover {
+    text-decoration: none;
+    background-color: #E9F2F9;
+    font-weight: bold;
+}
+.sino-header .navigator .glyphicon {
+	margin-right: 10px;
+	font-size: 15px;
+	vertical-align: middle;
+	color: #999;
+}
+.sino-header .navigator .nav-text {
+	vertical-align: middle;
+}
+.sino-header .navigator .nav.nav-current {
+	background-color: #E9F2F9;
+    font-weight: bold;
+}
+.sino-header .navigator .top-1{
+    background: url(../images/1.png) no-repeat 23px 17px;
+}
+.sino-header .navigator .top-2{
+    background: url(../images/2.png) no-repeat 23px 17px;
+}
+.sino-header .navigator .top-3{
+    background: url(../images/3.png) no-repeat 23px 17px;
+}
+.sino-header .navigator .top-4{
+    background: url(../images/4.png) no-repeat 23px 17px;
+}
+.sino-header .navigator .top-5{
+    background: url(../images/5.png) no-repeat 23px 17px;
+}
+.sino-header .navigator .top-6{
+    background: url(../images/6.png) no-repeat 23px 17px;
+}
+.sino-header .navigator .top-7{
+    background: url(../images/7.png) no-repeat 23px 17px;
+}
+/**crumb**/
+.sino-crumb {
+	position:relative;z-index:3;
+    min-width: 1200px;
+    padding: 8px 10px;
+    background:#f9f9f9;
+    border-bottom: 1px solid #f2f2f2;
+}
+.sino-crumb .crumb-list {
+    margin:0;padding:0;
+}
+.sino-crumb li {
+    float:left;
+    margin-right: 5px;
+    color: #999;
+}
+.sino-crumb .home {
+    padding-left: 20px;
+    background: url(../images/sye.png) no-repeat left 3px;
+}
+/**娓氀嗙珶鐎佃壈鍩�*/
+.sino-aside-menu {
+    margin: 0;padding:10px 0 0;
+    background: #fff;
+}
+.sino-aside-menu .lk-menu {
+    height: 30px;
+    padding-left: 40px;
+    line-height: 30px;
+    display: block;
+}
+.sino-aside-menu .lk-menu.nav-current,
+.sino-aside-menu .lk-menu:hover {
+    background: #30a5ff;
+    color: #fff;
+    text-decoration: none;
+}
+.sino-aside-menu .lk-menu .glyphicon {
+    font-size:12px;
+    margin-right:10px;
+}
+.sino-aside-menu .lk-menu .menu-text {
+}
+/**footer**/
+.sino-footer {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #999;
+}
+/**濠婃艾濮╃悰銊︾壐閻ㄥ嫮娴夐崗铏壉瀵拷*/
+.sino-hq-table {
+    padding: 0 20px;
+}
+.sino-hq-table .tb-captions {
+    padding: 4px 10px;
+    background: #d9eef5;
+}
+.sino-hq-table .select-record {
+    margin: 0 5px;
+    background: none;
+}
+.sino-hq-table .layout-wrap {
+    margin-bottom: 20px;
+}
+.sino-hq-table .table {
+    margin-bottom: 0;
+}
+.sino-hq-table .th-sort {
+    position: relative;
+}
+.sino-hq-table .th-sort:after {
+    content: '';
+    display: block;
+    position: absolute;right: 8px;top:50%;
+    margin-top: 2px;
+    border-width: 6px 4px 0; border-style: solid;
+    border-color: #ccc transparent transparent;
+}
+.sino-hq-table .th-sort:before {
+    content: '';
+    display: block;
+    position: absolute;right: 8px;top:50%;
+    margin-top: -8px;
+    border-width: 0 4px 6px; border-style: solid;
+    border-color: transparent transparent #ccc;
+}
+.sino-hq-table .th-sort.asc:before {
+    border-color: transparent transparent #666;
+}
+.sino-hq-table .th-sort.desc:after {
+    border-color: #666 transparent transparent;
+}
+.sino-scroll-table .main-table-wrap {
+    overflow: hidden;
+    overflow-x: auto;
+    float: left;
+}
+.sino-scroll-table .aside-table-wrap {
+    margin-left: -1px;
+    float:left;
+}
+.sino-page-wrap {
+    margin: 0 0 20px;
+    text-align: center;
+}
+.sino-page-wrap .prev,
+.sino-page-wrap .next,
+.sino-page-wrap .sino-page {
+    height: 26px;
+    padding: 0 8px;
+    margin: 0 3px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ccc;
+    line-height: 26px;
+}
+.sino-page-wrap .prev:hover,
+.sino-page-wrap .next:hover,
+.sino-page-wrap .sino-page.current,
+.sino-page-wrap .sino-page.current:hover,
+.sino-page-wrap .sino-page:hover {
+    text-decoration: none;
+    background: #4c91ff;
+    color: #fff;
+}
+.sino-page-wrap .prev.disabled,
+.sino-page-wrap .next.disabled,
+.sino-page-wrap .prev.disabled:hover,
+.sino-page-wrap .next:disabled:hover {
+    color:#999;
+    background: #fff;
+    border: 1px solid #f2f2f2;
+    cursor: default;
+}
+
+
+/**鏍囬鏍峰紡**/	
+.demo-title{
+	padding: 16px 0 6px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+	color:#30a5ff;
+	font-weight:bold;
+	font-size: 16px;
+}
+/**table鏍峰紡**/
+.td-title{
+	font-weight:bold;
+	font-size:12px;
+	text-align:right;
+}
+/*nav board*/
+.sino-nav-dashboard {
+	padding-top:10px;
+}
+.sino-nav-dashboard .title {
+	padding-bottom: 8px;
+	border-bottom: 1px solid #f2f2f2;
+	margin-bottom: 20px;
+}
+.sino-nav-dashboard li {
+	float:left;
+	margin: 0 10px 20px;
+}
+.sino-nav-dashboard .dashboard-item {
+	background: #f9f9f9;
+	border-radius: 10px;
+	width:100px; height: 100px;
+	margin-bottom: 10px;
+	display:block;
+}
+.sino-nav-dashboard .dashboard-text {
+	text-align:center;
+	display:block;
+}

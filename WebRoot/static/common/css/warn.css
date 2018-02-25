@@ -1,0 +1,98 @@
+/**404Ò³ÃæÑùÊ½**/
+	.sino-body404{
+		min-width: 1200px;
+		height:400px;
+		background-color:white;
+	}
+	.sino-left404{
+		width: 50%;
+	    height: 400px;
+	    float: left;
+	}
+	.sino-left404img{
+	    width: 300px;
+	    margin-top: 105px;
+	    margin-left: 370px;
+	}
+	.sino-right404{
+		width:50%;
+		height:400px;
+		float:left;
+	}
+	.sino-right404p{
+		font-size: 30px;
+	    margin-left:40px;
+	    margin-top: 180px;
+	    font-family: Î¢ÈíÑÅºÚ;
+	}
+	
+/**500Ò³ÃæÑùÊ½**/
+	.sino-body500{
+		min-width: 1200px;
+		height:400px;
+		background-color:white;
+	}
+	.sino-left500{
+		width: 50%;
+	    height: 400px;
+	    float: left;
+	}
+	.sino-left500img{
+	    width: 300px;
+	    margin-top: 105px;
+	    margin-left: 370px;
+	}
+	.sino-right500{
+		width:50%;
+		height:400px;
+		float:left;
+	}
+	.sino-right500p{
+		font-size: 30px;
+	    margin-left:40px;
+	    margin-top: 180px;
+	    font-family: Î¢ÈíÑÅºÚ;
+	}
+/**SuccessÒ³ÃæÑùÊ½**/
+	.sino-bodySuccess{
+		min-width: 1200px;
+		height:400px;
+		background-color:white;
+	}
+	.sino-leftSuccess{
+		width: 55%;
+	    height: 280px;
+	    float: left; 
+	}
+	.sino-leftSuccessimg{
+	    width: 300px;
+	    margin-top: 105px;
+	    margin-left: 450px;
+	}
+	.sino-rightSuccess{
+		width:45%;
+		height:280px;
+		float:left; 
+	}
+	.sino-rightSuccessp{
+		font-size: 30px;
+	    margin-left:40px;
+	    margin-top: 180px;
+	    font-family: Î¢ÈíÑÅºÚ;
+	}
+	.sino-rightChek{
+		width:100%;
+		height:100px;
+	}
+	.sino-Chekon{
+		color:black;
+		float:left;
+		font-size: 30px;
+	    margin-left:275px;
+	    font-family: Î¢ÈíÑÅºÚ;
+	   	text-decoration:none  !important;
+	}
+	.sino-Chekon:hover{
+		color:black;
+		font-family: Î¢ÈíÑÅºÚ
+	}

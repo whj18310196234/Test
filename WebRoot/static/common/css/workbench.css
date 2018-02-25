@@ -1,0 +1,62 @@
+/*
+ * create by huangqiang
+ * 2016.12.19
+ */
+/**slidebar**/
+.s-sliderbar-wrap {
+    margin: 0 24px 20px;
+    height: 100px;
+    overflow: hidden;
+}
+.s-sliderbar-wrap.scroll {
+    overflow-x: auto;
+}
+.s-sliderbar-wrap .list {
+    margin: 0;padding:0;
+    width: 3300px;
+}
+.s-sliderbar-wrap li {
+    float:left; margin-right: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 160px;height: 100px;
+}
+/**ends**/
+.s-workbench-wrapper {
+    margin: 0 24px;
+    min-width: 1200px;
+}
+.s-workbench-wrapper .asidecol {
+    float:left;
+    width: 28.8%;
+    padding-right: 20px;
+}
+.s-workbench-wrapper .maincol {
+    float: right;
+    width: 71.2%;
+}
+/***/
+.s-item-mod {
+    background: #fff;
+    border: 1px solid #d7d9e1;
+    margin-bottom: 20px;
+}
+.s-item-mod .title {
+    padding: 17px 0;
+    margin: 0 18px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.s-item-mod .title.border {
+    border-bottom: 1px solid #d7d9e1;
+}
+/**/
+.s-workbench-1 .chart {
+    height: 360px;
+}
+.s-workbench-2 .chart {
+    height: 360px;
+}
+.s-workbench-3 .chart {
+    height: 360px;
+}

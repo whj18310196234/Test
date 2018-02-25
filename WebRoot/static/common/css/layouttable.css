@@ -1,0 +1,61 @@
+.s-layout-table {
+    width: 980px;
+    margin: 20px auto 0;
+    padding: 20px;
+    background: #fff;
+}
+.s-layout-table .td-v-m {
+    vertical-align: middle;
+}
+.s-layout-table .edit-pattern {
+    border:1px solid #ddd;
+    margin-bottom: 20px;
+}
+.s-layout-table .edit-pattern .list {
+    margin:0;padding:0;
+}
+.s-layout-table .edit-pattern .edit-main {
+    width: 720px;
+    height: 500px;
+    padding: 10px 5px;
+    float: left;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.s-layout-table .edit-pattern .edit-main li {
+    position: relative;
+    border: 1px dashed #ccc;
+    width: 345px;height: 30px;
+    padding: 0 10px;
+    margin: 0 5px 10px;
+    line-height: 30px;
+    float:left;
+    cursor: move;
+}
+.s-layout-table .edit-pattern .edit-main li.col-2 {
+    width: 700px;
+}
+.s-layout-table .edit-pattern .edit-main li.insert-box {
+    border:1px dashed #f60;
+}
+.s-layout-table .edit-pattern .edit-aside {
+    width: 200px;
+    height: 500px;
+    float: right;
+    border-left: 1px solid #ddd; padding-left:10px;
+}
+.s-layout-table .edit-pattern .edit-aside li {
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    line-height: 30px;
+    cursor: move;
+}
+.s-layout-table .edit-pattern .edit-main .in-selecting0 {
+    border:1px dashed #f60;
+}
+.s-move-item {
+    border: 1px solid #f60;
+    padding: 4px 10px;
+    display: block;
+    background: #fff;
+}
